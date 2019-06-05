@@ -20,11 +20,34 @@ var divide = function(number1, number2) {
 
 // User Interface or front-end logic:
 $().ready(function() {
-  $("form#add").submit(function(event){
+
+
+  $("form#math").submit(function(event){
     event.preventDefault();
-  var number1 = parseInt($("#add1").val());
-  var number2 = parseInt($("#add2").val());
+  var number1 = parseInt($("#num1").val());
+  var number2 = parseInt($("#num2").val());
   var result = add(number1, number2);
   $("#output").text(result);
+
   });
+  $("form#math").submit(function(event){
+    event.preventDefault();
+    var number1 = parseInt($("#num1").val());
+    var number2 = parseInt($("#num2").val());
+    var result = subtract(number1, number2);
+    $("#output").text(result);
+  });
+
+  $("form#math").submit(function(event){
+    event.preventDefault();
+    var number1 = parseInt($("#num1").val());
+    var number2 = parseInt($("#num2").val());
+    var result = divide(number1, number2);
+    $("#output").text(result);
+  });
+
+
+
+
 });
+//$("#subt").val(Number($("#num1").val()) - Number($("#num2").val()));
