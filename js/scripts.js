@@ -38,15 +38,22 @@ $().ready(function() {
     $("#output").text(result);
   });
 
-  $("form#math").submit(function(event){
+  /*$("form#math").submit(function(event){
     event.preventDefault();
     var number1 = parseInt($("#num1").val());
     var number2 = parseInt($("#num2").val());
     var result = divide(number1, number2);
     $("#output").text(result);
+  });*/
+/*
+  $("form#math").submit(function(event){
+    event.preventDefault();
+    var number1 = parseInt($("#num1").val());
+    var number2 = parseInt($("#num2").val());
+    var result = multiply(number1, number2);
+    $("#output").text(result);
   });
-
-
+*/
 
 
 });
